@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://KabirsFarmApi.com/root.json",
+  "type": "array",
+  "title": "An array of Farm data",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "Farm data",
+    "required": [
+      "id",
+      "humidity",
+      "temperature",
+      "soilAcidity",
+      "lightIntensity",
+      "date"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1000,
+        "title": "Each farm Id",
+        "default": 0,
+        "examples": [
+          3
+        ]
+      },
+      "humidity": {
+        "$id": "#/items/properties/humidity",
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100,
+        "title": "The Humidity of the farm",
+        "default": 0.0,
+        "examples": [
+          2.2
+        ]
+      },
+      "temperature": {
+        "$id": "#/items/properties/temperature",
+        "type": "number",
+        "minimum": 0,
+        "maximum": 100,
+        "title": "The Temperature of the farm",
+        "default": 0.0,
+        "examples": [
+          3.4
+        ]
+      },
+      "soilAcidity": {
+        "$id": "#/items/properties/soilAcidity",
+        "type": "number",
+        "minimum": 0,
+        "maximum": 14,
+        "title": "The Soil acidity of the farm",
+        "default": 0,
+        "examples": [
+          4
+        ]
+      },
+      "lightIntensity": {
+        "$id": "#/items/properties/lightIntensity",
+        "type": "number",
+        "minimum": 0,
+        "maximum": 4000,
+        "title": "The Light intensity of the farm",
+        "default": 0.0,
+        "examples": [
+          4.2
+        ]
+      },
+      "date": {
+        "$id": "#/items/properties/date",
+        "type": "string",
+        "maximum": 6,
+        "title": "Date data entered",
+        "default": "10-Jan",
+        "examples": [
+          "10-Jan"
+        ]
+      }
+    }
+  }
+}
